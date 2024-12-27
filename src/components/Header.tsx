@@ -45,6 +45,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
                      outline-none transition-all duration-300 
                      focus:border-white placeholder:text-sm placeholder:text-gray-400"
         />
+        <p className="absolute top-0 right-0 w-6 h-6 cursor-pointer">hola </p>
       </div>
     </header>
   );
