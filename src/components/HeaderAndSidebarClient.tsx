@@ -8,7 +8,7 @@ export default function HeaderAndSidebarClient() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const handleOpenSidebar = () => {
-    setIsSidebarOpen(true);
+    setIsSidebarOpen(!isSidebarOpen);
   };
 
   const handleCloseSidebar = () => {
