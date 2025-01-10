@@ -15,15 +15,15 @@ const Hero: React.FC<HeroProps> = () => {
       >
         {/* Overlay degradado */}
         <div
-          className="absolute bottom-0 left-0 w-full h-1/5 
+          className="absolute bottom-0 left-0 w-full h-1/2 
                         bg-gradient-to-b from-transparent to-black"
         />
       </div>
 
       {/* Middle Section */}
-      <div className="h-[10%] bg-gradient-to-b from-black/30 to-transparent relative">
-        {/* Logo superpuesto en el medio (opcional) */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+      <div className="h-[5%] bg-gradient-to-b from-black/30 to-transparent relative flex items-center justify-center">
+        {/* Logo centrado */}
+        <div className="z-10">
           <Image
             src="/logo.png"
             alt="Espacio Cava Logo"
@@ -36,19 +36,26 @@ const Hero: React.FC<HeroProps> = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="h-2/5 bg-black flex flex-col items-center justify-start pt-4 relative">
-        <p className="text-center max-w-2xl text-base italic text-[#F6EACE] drop-shadow-sm px-4">
+      <div className="h-[35%] bg-black flex flex-col items-center justify-start pt-8 relative">
+        {/* Ajustar margen superior al texto */}
+        <p className="text-center max-w-2xl text-base italic text-[#f6eacebb] drop-shadow-sm px-4 mt-12 font-thin">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           condimentum massa nec aliquet efficitur. Phasellus aliquet est a
           rutrum hendrerit. Integer nec facilisis dolor, id rutrum libero.
         </p>
 
-        <nav className="flex items-center gap-2 text-white/80 uppercase font-semibold tracking-wide mt-4">
-          <a href="nuestra-cava" className="transition-colors hover:text-white">
+        <nav className="flex items-center gap-2 text-white/80 uppercase font-medium tracking-wide mt-6">
+          <a
+            href="nuestra-cava"
+            className="transition-colors hover:text-white duration-200"
+          >
             Nuestra Cava
           </a>
           <span>|</span>
-          <a href="experiencias" className="transition-colors hover:text-white">
+          <a
+            href="experiencias"
+            className="transition-colors hover:text-white duration-200"
+          >
             Experiencias
           </a>
         </nav>

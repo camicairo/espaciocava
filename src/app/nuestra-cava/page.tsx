@@ -24,23 +24,23 @@ export default function NuestraCavaPage() {
     // ... más vinos
   ];
   return (
-    <main className="pt-[90px]">
+    <main>
       {" "}
       {/* Este padding top para que no tape el header fijo */}
       {/* Encabezado con breadcrumbs */}
-      <div className="px-8 py-4 text-sm text-gray-200">
-        <a href="/" className="text-gray-400 hover:text-white">
-          Inicio
-        </a>
-        <span className="mx-2">{">"}</span>
-        <span>Nuestra Cava</span>
-      </div>
       {/* Hero */}
       <section
-        className="relative w-full h-[50vh] bg-cover bg-center flex items-center justify-center"
+        className="relative w-full h-[35vh] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: "url('/background.png')" }}
       >
         <div className="absolute bottom-0 left-0 w-full h-1/5 bg-gradient-to-b from-transparent to-black" />
+        <div className="px-8 text-base text-white font-medium	 absolute top-16 left-1 tracking-wider	">
+          <a href="/" className="text-gray-400 font-light	 hover:text-white">
+            Inicio
+          </a>
+          <span className="mx-2">{">"}</span>
+          <span>Nuestra Cava</span>
+        </div>
         <Image
           src="/logo.png"
           alt="Espacio Cava Logo"

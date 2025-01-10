@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import HeaderAndSidebarClient from "@/components/HeaderAndSidebarClient";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"], // Configura los pesos que necesitas
+  variable: "--font-montserrat", // Define una variable CSS
+});
 
 export const metadata: Metadata = {
   title: "Espacio Cava",
@@ -18,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="es" className={montserrat.variable}>
       <body className="bg-black text-white">
         {/* 
           Layout sigue siendo un Server Component. 

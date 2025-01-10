@@ -18,22 +18,29 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       >
         <ul className="list-none mt-20 px-8 space-y-8">
           <li>
+            <Link href="/" onClick={onClose}>
+              <span className="text-white/75 text-sm uppercase hover:text-white duration-200 tracking-wide hover:tracking-wider transition-all">
+                Inicio
+              </span>
+            </Link>
+          </li>
+          <li>
             <Link href="nuestra-cava" onClick={onClose}>
-              <span className="text-white text-sm uppercase hover:text-white/90">
+              <span className="text-white/75 text-sm uppercase hover:text-white duration-200 tracking-wide hover:tracking-wider transition-all">
                 Nuestra Cava
               </span>
             </Link>
           </li>
           <li>
             <Link href="experiencias" onClick={onClose}>
-              <span className="text-white text-sm uppercase hover:text-white/90">
+              <span className="text-white/75 text-sm uppercase hover:text-white duration-200 tracking-wide hover:tracking-wider transition-all">
                 Experiencias
               </span>
             </Link>
           </li>
           <li>
             <Link href="sobre-nosotros" onClick={onClose}>
-              <span className="text-white text-sm uppercase hover:text-white/90">
+              <span className="text-white/75 text-sm uppercase hover:text-white duration-200 tracking-wide hover:tracking-wider transition-all">
                 Sobre Nosotros
               </span>
             </Link>
