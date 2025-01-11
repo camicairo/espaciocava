@@ -50,9 +50,9 @@ export default function NuestraCavaPage() {
         />
       </section>
       {/* Contenido principal */}
-      <section className="bg-black min-h-screen">
+      <section className="bg-black min-h-screen ">
         {/* Tabs */}
-        <div className="flex justify-center gap-2 mt-8">
+        <div className="flex overflow-x-auto whitespace-nowrap gap-4 mt-8 px-4 scrollbar-hide">
           {[
             "Argentina",
             "Italia",
@@ -64,7 +64,7 @@ export default function NuestraCavaPage() {
           ].map((pais) => (
             <button
               key={pais}
-              className="border border-white px-4 py-2 text-white text-sm hover:bg-yellow-300 hover:text-black transition"
+              className="px-6 py-2 bg-black text-white text-sm border border-white rounded-md transition-all focus:bg-white focus:text-black whitespace-nowrap"
             >
               {pais}
             </button>
