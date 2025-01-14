@@ -9,7 +9,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-montserrat)", "sans-serif"], // Usa Montserrat como fuente predeterminada
+        sans: ["var(--font-montserrat)", "sans-serif"],
+        spectral: ["Spectral", "serif"],
       },
       colors: {
         background: "var(--background)",
