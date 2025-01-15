@@ -39,6 +39,15 @@ export default function NuestraCavaPage() {
       imageSrc: "/Foto_261.jpg",
       classification: "blanco", // Clasificación correcta
     },
+    {
+      title: "Aluvional Altamira",
+      year: 2014,
+      bodega: "Zuccardi",
+      region: "Valle de Uco",
+      cepa: "Malbec",
+      imageSrc: "/zuccardi.jpg",
+      classification: "blanco", // Clasificación correcta
+    },
   ];
 
   return (
