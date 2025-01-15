@@ -25,7 +25,7 @@ const WineCard: FC<WineCardProps> = ({
   const borderColor = classification === "tinto" ? "#941342" : "#F6EACE";
 
   return (
-    <div className="flex w-full bg-black/80 rounded-md overflow-hidden shadow-md hover:-translate-y-2 transition-transform border border-[#3C3C3D] relative">
+    <div className="flex w-full bg-black/80 rounded-md overflow-hidden shadow-md hover:-translate-y-1 transition-transform border border-[#3C3C3D] relative">
       {/* Imagen */}
       <div className="relative w-[100px] h-[150px]">
         <Image
