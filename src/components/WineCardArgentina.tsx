@@ -40,14 +40,14 @@ const WineCard: FC<WineCardProps> = ({
       {/* Contenido de la tarjeta */}
       <div className="p-4 w-2/3">
         {/* Contenedor flex para nombre y año */}
-        <div className="flex justify-start gap-3 items-baseline mb-2">
+        <div className="flex justify-start gap-2 items-baseline mb-2">
           {/* Nombre del vino */}
           <h3 className="font-[Spectral] text-[22px] font-semibold">{title}</h3>
 
           {/* Año del vino */}
           {year && (
             <p className="font-[Montserrat] text-[14px] text-white/75">
-              {year}
+              ({year})
             </p>
           )}
         </div>

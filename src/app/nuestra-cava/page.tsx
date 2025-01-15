@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
+import Hero from "@/components/Hero";
 import WineCard from "@/components/WineCardArgentina";
 
 export default function NuestraCavaPage() {
@@ -19,7 +19,6 @@ export default function NuestraCavaPage() {
   // Estado para la región activa
   const [activeRegion, setActiveRegion] = useState("Argentina");
 
-  // Ejemplo: data "mock" de vinos
   const wines = [
     {
       title: "Malbec Reserva",
@@ -28,7 +27,7 @@ export default function NuestraCavaPage() {
       region: "Mendoza",
       cepa: "Malbec",
       imageSrc: "/Foto_261.jpg",
-      classification: "tinto", // Clasificación correcta
+      classification: "tinto",
     },
     {
       title: "Cabernet Sauvignon",
@@ -37,7 +36,7 @@ export default function NuestraCavaPage() {
       region: "Mendoza",
       cepa: "Cabernet Sauvignon",
       imageSrc: "/Foto_261.jpg",
-      classification: "blanco", // Clasificación correcta
+      classification: "blanco",
     },
     {
       title: "Aluvional Altamira",
@@ -46,34 +45,24 @@ export default function NuestraCavaPage() {
       region: "Valle de Uco",
       cepa: "Malbec",
       imageSrc: "/zuccardi.jpg",
-      classification: "blanco", // Clasificación correcta
+      classification: "blanco",
+    },
+    {
+      title: "33 de Davalos",
+      year: 2017,
+      bodega: "Tacuil",
+      region: "Valle Calchaqui",
+      cepa: "Blend",
+      imageSrc: "/Foto_127.jpg",
+      classification: "tinto",
     },
   ];
 
   return (
     <main className="h-screen flex flex-col">
       {/* Hero Section */}
-      <section
-        className="relative w-full h-[35vh] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/background.png')" }}
-      >
-        <div className="absolute bottom-0 left-0 w-full h-1/5 bg-gradient-to-b from-transparent to-black" />
-        <div className="px-8 text-base text-white font-medium absolute top-16 left-1 tracking-wider">
-          {/* Breadcrumbs */}
-          <a href="/" className="text-gray-400 font-light hover:text-white">
-            Inicio
-          </a>
-          <span className="mx-2">{">"}</span>
-          <span>Nuestra Cava</span>
-        </div>
-        <Image
-          src="/logo.png"
-          alt="Espacio Cava Logo"
-          width={140}
-          height={100}
-          className="z-10 object-contain"
-        />
-      </section>
+      <Hero title="Nuestra Cava" />
+
       {/* Título, Tabs y Filtros */}
       <section className="sticky top-0 z-20 bg-black">
         <div className="text-center px-10 mt-6">
@@ -122,7 +111,7 @@ export default function NuestraCavaPage() {
               region={wine.region}
               cepa={wine.cepa}
               imageSrc={wine.imageSrc}
-              classification={wine.classification} // Pasar la clasificación correctamente
+              classification={wine.classification}
             />
           ))}
         </div>
